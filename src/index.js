@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import {Editor, EditorState, RichUtils} from 'draft-js';
 import './index.css';
 
-class MyEditor1 extends React.Component {
+class TextEditor extends React.Component {
   constructor(props) {
     super(props);
     this.state = {editorState: EditorState.createEmpty()};
@@ -44,7 +44,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <MyEditor1/>
+        <TextEditor/>
       </div>
     )
   }
