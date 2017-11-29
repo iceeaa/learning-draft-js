@@ -10,8 +10,8 @@ class TextEditor extends React.Component {
     this.onChange = (editorState) => this.setState({editorState});
     this.handleKeyCommand = this.handleKeyCommand.bind(this);
   }
-  _onClick = (type) => {
-    if(type) this.onChange(RichUtils.toggleInlineStyle(this.state.editorState, 'BOLD'));
+  _onClick = (types) => {
+    if(types) this.onChange(RichUtils.toggleInlineStyle(this.state.editorState, 'BOLD'));
     else  this.onChange(RichUtils.toggleInlineStyle(this.state.editorState, 'ITALIC'));
   }
   handleKeyCommand(command, editorState) {
