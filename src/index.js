@@ -16,8 +16,8 @@ class TextEditor extends React.Component {
   }
   handleKeyCommand(command, editorState) {
     const newState = RichUtils.handleKeyCommand(editorState, command);
-    if (newState) {
-      this.onChange(newState);
+    if (newStates) {
+      this.onChange(newStates);
       return 'handled';
     }
     return 'not-handled';
